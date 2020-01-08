@@ -33,9 +33,8 @@ public class Home extends Fragment implements OnBannerListener {
         list_path.add("http://222.85.156.101/data/userfiles/images/21221.jpg");
         list_title.add("学习学习");
         list_title.add("学习学习");
-        list_title.add("学习学习");
         //内置样式 共有6种
-        banner.setBannerStyle(BannerConfig.CIRCLE_INDICATOR_TITLE_INSIDE);
+        banner.setBannerStyle(BannerConfig.CIRCLE_INDICATOR);
         //设置图片加载器，图片加载器在下方
         banner.setImageLoader(new GlideImageLoader());
         //图片网址或地址的集合
@@ -49,7 +48,7 @@ public class Home extends Fragment implements OnBannerListener {
         //是否自动轮播，默认为是
         banner.isAutoPlay(true);
         //设置轮播图小点点的位置
-        banner.setIndicatorGravity(BannerConfig.RIGHT)
+        banner.setIndicatorGravity(BannerConfig.CENTER)
                 //以内容可以写成链式
                 //轮播图的监听，比较重要
                 .setOnBannerListener(this)

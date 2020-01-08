@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Leiao_project</string>
+    <string name="math">数学</string>
+    <string name="chinese">语文</string>
+    <string name="english">英语</string>
+    <string name="other">其他</string>
 </resources>
