@@ -26,4 +26,10 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    //底部导航栏
+    implementation 'com.hjm:BottomTabBar:1.2.2'
+
+    //轮播图
+    implementation 'com.youth.banner:banner:1.4.10'  //最新版本
+
 }
