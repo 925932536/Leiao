@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <com.youth.banner.Banner
         android:id="@+id/home_banner"
         android:layout_alignParentTop="true"
         android:layout_width="match_parent"
-        android:layout_height="150dp"/>
+        android:layout_height="150dp"
+        app:indicator_margin="5dp"
+        />
     <RadioGroup
         android:id="@+id/home_rg"
         style="@style/home_radiogroup"
@@ -35,6 +38,7 @@
             android:drawableTop="@drawable/other"
             android:text="@string/other"/>
     </RadioGroup>
+
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

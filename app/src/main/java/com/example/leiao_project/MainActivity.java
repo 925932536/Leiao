@@ -1,8 +1,10 @@
 package com.example.leiao_project;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 
 import com.hjm.bottomtabbar.BottomTabBar;
@@ -10,6 +12,7 @@ import com.hjm.bottomtabbar.BottomTabBar;
 public class MainActivity extends AppCompatActivity {
 
     private BottomTabBar bottomTabBar;
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
 //        导航栏
         bottomTabBar=findViewById(R.id.nav_bottom);
         bottomTabBar.init(getSupportFragmentManager())
-                .setImgSize(50,50) //图片大小
-                .setFontSize(25)//文字大小
+                .setImgSize(25,25) //图片大小
+                .setFontSize(15)//文字大小
                 .setTabPadding(2,2,2)//导航之间的距离
                 .setChangeColor(Color. 	rgb(255,0,0), Color.rgb(0,0,0))//点击前的颜色和点击后的颜色
                 .addTabItem("首页",R.drawable.home_light,R.drawable.home,Home.class)
